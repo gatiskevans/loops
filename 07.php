@@ -17,7 +17,7 @@
                 $secondRoll = rand(1, 6);
                 $result = $firstRoll + $secondRoll;
 
-                if($result == $this->sum){
+                if($result === $this->sum){
                     $message .= "$firstRoll and $secondRoll = $result";
                     $calculating = false;
                 } else{
