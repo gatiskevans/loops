@@ -10,26 +10,30 @@
         }
 
         function game(){
+
             while(true){
                 $this->rollDice();
                 echo "You rolled a $this->diceRolled!\n";
                 $this->diceRolled === 1 ? die("You got $this->score points.") : $selection = readline("Roll again? (Y/N) ");
 
-                $isPromptActive = true;
-                while($isPromptActive) {
-                    switch (true) {
-                        case strtoupper($selection) === "Y" || strtoupper($selection) === "YES":
-                            $isPromptActive = false;
-                            break;
-                        case strtoupper($selection) === "N" || strtoupper($selection) === "NO";
-                            die("You got $this->score points!");
-                        default:
-                            $selection = readline("Roll again? (Y/N) ");
-                            break;
+                    $isPromptActive = true;
+                    while($isPromptActive) {
+
+                        switch (true) {
+                            case strtoupper($selection) === "Y" || strtoupper($selection) === "YES":
+                                $isPromptActive = false;
+                                break;
+                            case strtoupper($selection) === "N" || strtoupper($selection) === "NO";
+                                die("You got $this->score points!");
+                            default:
+                                $selection = readline("Roll again? (Y/N) ");
+                                break;
+                        }
+
                     }
-                }
 
             }
+
         }
 
     }
