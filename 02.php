@@ -1,6 +1,6 @@
 <?php
 
-    $number = (int) readline("Input number of terms: ");
+    $number = (int) readline("Input number of times: ");
 
     //todo complete loop to multiply i with itself n times, it is NOT allowed to use built-in pow() function
     for($i = 1; $i <= $number; $i++){
