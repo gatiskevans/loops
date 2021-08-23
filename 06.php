@@ -14,10 +14,7 @@
                 for($j = ($i-1)*4; $j > 0; $j--){
                     $figure .= "/";
                 }
-                for($star = ($this->number - $i)*4; $star > 0; $star--){
-                    $figure .= "*";
-                }
-                for($star = ($this->number - $i)*4; $star > 0; $star--){
+                for($star = ($this->number - $i)*4*2; $star > 0; $star--){
                     $figure .= "*";
                 }
                 for($j = ($i-1)*4; $j > 0; $j--){
